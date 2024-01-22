@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    position:relative;
+    font-family: 'Poppins', sans-serif!important;
+    background-color: #afe5f1!important;
+
+}
+.box{
+    /* position: absolute;
+    transform: translate(50%,-50%);
+    min-height: 70vh;
+    width: 50%;
+    top:200px; */
+    background-color:lightblue!important;
+    /* display: flex; */
+    position: relative;
+}
+
+input{
+    border-radius: 10px;
+    padding: 6px 14px;
+
+}
+.inputdata{
+    position: relative;
+}
+
+.location{
+    letter-spacing: 1.2px;
+   
+}
+.text-white{
+    color: #fff;
+    font-size:40px;
+}
+.h25{
+    height: 25rem!important;
+}
+.mt5{
+    margin-top:4.5rem!important;
+}
+.cont{
+    background-color: brown;
+}
+.cont h1{
+    color: green;
+}
+.w1 {
+    stroke: none;
+    fill: #30b1ce;
+    opacity: 55%;
+    animation: move1 5s ease-in-out infinite;
+  }
+  .w2 {
+    stroke: none;
+    fill: #fff;
+    opacity: 35%;
+    transform: translate3d(0, 0, 0);
+    animation: move2 4s ease-in-out infinite;
+  }
+  .w3 {
+    stroke: none;
+    fill: #318db2;
+    opacity: 30%;
+    transform: translate3d(0, 0, 0);
+    animation: move3 6s ease-in-out infinite;
+  }
+  @keyframes move1 {
+    0% {
+      transform: translateX(-500px) scaleX(2.5);
+    }
+    25% {
+      transform: translateX(-100) scaleX(2.5);
+    }
+    50% {
+      transform: translateX(0) scaleX(2.5);
+    }
+    75% {
+      transform: translateX(-100) scaleX(2.5);
+    }
+    100% {
+      transform: translateX(-500px) scaleX(2.5);
+    }
+  }
+  @keyframes move2 {
+    0% {
+      transform: translateX(-600px) scaleX(3);
+    }
+    25% {
+      transform: translateX(-100) scaleX(2.5);
+    }
+    50% {
+      transform: translateX(0) scaleX(3);
+    }
+    75% {
+      transform: translateX(-100) scaleX(2.5);
+    }
+    100% {
+      transform: translateX(-600px) scaleX(3);
+    }
+  }
+  @keyframes move3 {
+    0% {
+      transform: translateX(-800px) scaleX(3);
+    }
+    25% {
+      transform: translateX(-100) scaleX(2.5);
+    }
+    50% {
+      transform: translateX(0) scaleX(3);
+    }
+    75% {
+      transform: translateX(-100) scaleX(2.5);
+    }
+    100% {
+      transform: translateX(-800px) scaleX(3);
+    }
+  }
+    
+
+img{
+  max-height: 240px!important;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.text-center{
+  text-align: center!important;
+}
+.card{
+  width: 20rem;
+  margin: 16px 0px ;
+}
+@media (max-width:600px){
+  .card{
+    width: 100%;
+  }
+}
+.block{
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #000080;
+}
+.para{
+  text-align: justify;
+  color: black;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
