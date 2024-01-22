@@ -34,31 +34,20 @@ const Api = () => {
   <div className="card-body">
   <h5 className="card-title">Card title</h5>
   {/* <p className="card-text"></p> */}
-  <div className="flip-box">
-  <div className="flip-box-inner">
-  <div className="flip-box-front">
+ 
    <img className='head img-fluid' src={elem.image} /> 
    {/* <p className='block'>{elem.id}</p> */}
    <div className ="flip-box-back">
    <p className='block'>{elem.category}</p>
    <p className='para'>{elem.description.slice(0,90)}</p>
+
+  <p className='price'><i className="fa-solid fa-indian-rupee-sign"></i>&nbsp;{elem.price}</p>
+  <p>{elem.rating.rate} </p>
+
    </div>
    </div>
    </div>
 
-  
-   
-   
-   
-  </div>
-</div>
-
-
-
-
-   
-   
-   </div>
   </div>
    </>
  )

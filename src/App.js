@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import css from './css/style.css'
+// import css from './css/style.css'
+import css from './css/product.css'
 import Tempapp from './component/Tempapp';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Api from './Api';
+import Api from './Api'; 
 
 function App() {
   const [userdata,setdata] = useState([]);
