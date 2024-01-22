@@ -39,9 +39,9 @@ function App() {
   <div className='text-center'>   
  
 
-   <Tempapp /> 
+   {/* <Tempapp />  */}
     
-     {/* <Api/> */}
+     <Api/> 
     </div>
   
   
